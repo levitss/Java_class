@@ -3,15 +3,13 @@ package kr.co.ezenac.loop;
 public class ForTest02 {
 
 	public static void main(String[] args) {
-		
-		int count = 1;
-		int sum = 0;
-		
-		for(int i = 0; i < 10; i++, count++) {
-			sum += count;
+		int num;
+		for (num=1;num<=100;num++) {
+			if(num%3!=0) continue;
+			System.out.println(num);
+			}
 		}
-		System.out.println(sum);
-
+	
 	}
 
-}
+
