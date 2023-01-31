@@ -1,7 +1,5 @@
 package kr.co.ezenac.infoHiding;
 
-import java.util.Scanner;
-
 class Student1{
 	String name;
 	int age;
@@ -41,7 +39,7 @@ public class PrivateTest {
 		System.out.printf("%s의 나이는 %d살%n",st2.name,st2.getAge());//우회로 접근
 		
 		st2.setAge(-1);
-125p		
+	
 		
 		
 		
