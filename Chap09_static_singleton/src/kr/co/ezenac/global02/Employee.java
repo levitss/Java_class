@@ -11,7 +11,7 @@ public class Employee {
 	}
 	public static void setSerialNum(int serialNum) {
 		//static method에선 static var만 사용
-		
+		Employee.serialNum=serialNum;
 	}
 	
 	

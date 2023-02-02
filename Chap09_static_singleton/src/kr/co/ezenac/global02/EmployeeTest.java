@@ -11,6 +11,9 @@ public class EmployeeTest {
 		System.out.println(emp.getEmployeeName()+","+emp.getEmployeeId());
 		System.out.println(emp2.getEmployeeName()+","+emp2.getEmployeeId());
 		System.out.println(Employee.serialNum);
+		Employee.setSerialNum(122);
+		System.out.println(Employee.serialNum);
 	}
+	
 
 }
