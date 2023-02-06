@@ -85,7 +85,7 @@ public class EzenArray {
 	public void delSelctInt(int input){//특정 요소 삭제  int찾아서 해당위치 부분 삭제 
 		
 		int i=0;
-		while(i<count||i<maxArr) {
+		while(i<count) {
 			if(arr[i]==input) {
 				for(int j=i;j<count;j++) {
 					arr[j]=arr[j+1];

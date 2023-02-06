@@ -22,5 +22,7 @@ public class EzenArrayTest {
 		arr.delSelctInt(7);
 		arr.printAll();
 		arr.checkSize();
+		arr.delSelctInt(9);
+		arr.printAll();
 	}
 }

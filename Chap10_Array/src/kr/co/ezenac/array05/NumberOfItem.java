@@ -47,7 +47,7 @@ public class NumberOfItem {
 		};
 		System.out.println(Arrays.asList(dataset).contains("I will ease your mind")); //포함되는가 true/false
 		//특정 문자의 개수
-		System.out.println(dataset[3].indexOf("I"));
+		System.out.println(dataset[0].indexOf("I"));
 		
 		
 		int sum=0;
@@ -57,7 +57,13 @@ public class NumberOfItem {
 				q++;
 		}
 		System.out.println(q);
-		
+		int count=0;
+		for (int item=0;item<dataset.length;item++) {
+			if(dataset[item].indexOf("I")>=0||dataset[item].indexOf("i")>=0) {
+				count++;
+			}
+		}
+		System.out.println(count);
 		
 //		List<String> list = new ArrayList<String>();
 //
