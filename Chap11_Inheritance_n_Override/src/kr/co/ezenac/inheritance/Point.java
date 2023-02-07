@@ -15,6 +15,5 @@ public class Point {
 	public String coordinate() {
 		String coor=Integer.toString(x)+","+Integer.toString(y);
 		return coor;
-	}
-	
+	}	
 }

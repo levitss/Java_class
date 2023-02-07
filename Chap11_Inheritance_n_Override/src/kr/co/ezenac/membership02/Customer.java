@@ -1,4 +1,4 @@
-package kr.co.ezenac.membership;
+package kr.co.ezenac.membership02;
 /*
  * 		일반고객	 vip고객
  * 할인율 적립율차이
@@ -14,6 +14,7 @@ public class Customer {
 	int accumulatedPurchase;
 //	double discountRatio=0.9; 이건 vip만
 	double bonusRatio=0.01;
+	
 
 	
 //	public Customer() {
@@ -25,6 +26,7 @@ public class Customer {
 	public Customer(String name,int id) {
 		this.customerId=id;
 		this.customerName=name;
+		System.out.println("custo 생성자");
 //		bonusRatio=0.01;
 //		customerGrade="SILVER"; 중복되는 건 멤버변수에서 초기화.
 

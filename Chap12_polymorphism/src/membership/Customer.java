@@ -1,4 +1,4 @@
-package kr.co.ezenac.membership;
+package membership;
 /*
  * 		일반고객	 vip고객
  * 할인율 적립율차이
@@ -12,8 +12,8 @@ public class Customer {
 	private String customerGrade="SILVER";
 	int bonusPoint;
 	int accumulatedPurchase;
-//	double discountRatio=0.9; 이건 vip만
 	double bonusRatio=0.01;
+	double discountRatio=1;
 
 	
 //	public Customer() {
@@ -25,15 +25,16 @@ public class Customer {
 	public Customer(String name,int id) {
 		this.customerId=id;
 		this.customerName=name;
+		System.out.println("custo 생성자");
 //		bonusRatio=0.01;
 //		customerGrade="SILVER"; 중복되는 건 멤버변수에서 초기화.
 
 	}
-	public int calcPrice(int price) {
+	public void calcPrice(int price) {
 		bonusPoint+=price*bonusRatio;
 		accumulatedPurchase+=price;
 		System.out.println((int)(price*bonusRatio)+"원이 적립되었습니다");
-		return price; 
+//		return price; 
 	}
 	public String showInfo() {
 		return customerName+"님의 등급은 "+customerGrade+"이며 현재 보너스 포인트는 "+bonusPoint+"입니다.";

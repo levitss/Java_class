@@ -1,6 +1,6 @@
 package kr.co.ezenac.inheritance;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
 public class Triangle extends Shape {
 //	int height;
@@ -21,6 +21,12 @@ public class Triangle extends Shape {
 	public Triangle(Point[] point) {
 		System.out.println("triangle의 매개변수 point 배열 생성자 호출");
 		this.point=point;
+	}
+	public void coor() {
+		for(int i=0; i<point.length;i++) {
+			System.out.println(point[i].coordinate());	
+		}
+		
 	}
 	
 	@Override

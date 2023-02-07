@@ -13,6 +13,9 @@ public class Circle extends Shape {
 		this.center=center;
 		this.radius=radius;
 	} 
+	public void coor() {
+		System.out.println(center.coordinate());
+	}
 	@Override
 	public void draw() {
 		System.out.println(this.color);
