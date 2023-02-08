@@ -1,6 +1,8 @@
 package membership;
 
 public class Gold extends Customer {
+		public int test=1;
+		
 	
 		public Gold(String name,int id) {
 		super(name,id);

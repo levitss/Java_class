@@ -38,6 +38,8 @@ public class CustomerTest2 {
 			cus.calcPrice(price);
 		}
 		
+		Gold gold3=(Gold) gold2;
+		System.out.println(gold2 instanceof Gold);
 		
 	}
 }

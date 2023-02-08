@@ -48,6 +48,24 @@ public class AnimalTest {
 	public void moveAnimal(Animal animal) {
 		animal.move();
 	}
+	public void checkDownCast(ArrayList<Animal> animalList) {///length는 배열 길이. 
+		for(int i=0;i<animalList.size();i++) {
+			Animal animal=animalList.get(i);//새로 animal 변수를 만들어서 get()으로 꺼낸 list 값을 할당
+			if(animal instanceof Dog) {
+				Dog dog=(Dog)animal;//다운캐스팅
+				dog.playBall();
+			}
+			else if(animal instanceof Tiger){
+				Tiger tiger=(Tiger)animal;
+				tiger.sounds();
+			}
+			else if(animal instanceof Eagle) {
+				Eagle eagle=(Eagle)animal;
+				eagle.wasihdukami();
+			}
+			else System.out.println("error");
+		}
+	}
 	public static void main(String[] args) {
 	Animal dog=new Dog();
 	Animal eagle=new Eagle();
@@ -58,6 +76,7 @@ public class AnimalTest {
 	AnimalTest test=new AnimalTest();
 	test.moveAnimal(tiger);
 	test.moveAnimal(eagle);//매개변수의 다형성
+	//////////////////////////////////////////////
 	ArrayList<Animal> animalList=new ArrayList<>();
 	animalList.add(tiger);
 	animalList.add(eagle);
@@ -68,6 +87,9 @@ public class AnimalTest {
 	for (Animal animal:animalList) {
 		animal.move();
 	}
+	System.out.println();
+	
+	test.checkDownCast(animalList);
 	
 	
 	}
