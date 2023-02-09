@@ -22,5 +22,10 @@ public class UserInfoDTO {
 	public void setPw(String pw) {
 		this.pw = pw;
 	}
+	public String getInfo() {
+		String result=" "+this.userName+" "+this.id+" "+this.pw;
+		
+		return result;
+	}
 
 }
