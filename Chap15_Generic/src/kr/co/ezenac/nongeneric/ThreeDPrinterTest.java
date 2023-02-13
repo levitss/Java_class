@@ -24,7 +24,7 @@ public class ThreeDPrinterTest {
 		Plastic plastic3=(Plastic) p3.getMaterial();
 		System.out.println(plastic3);
 		
-		
+		System.out.println(powder2);
 		
 		
 		//재료를 플라스틱 파우더 바꿀때마다 번거롭다.

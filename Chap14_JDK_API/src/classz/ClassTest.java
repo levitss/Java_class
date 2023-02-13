@@ -8,9 +8,9 @@ import java.lang.reflect.Method;
 
 public class ClassTest {
 	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException {
-		Person p=new Person("lee");//로컬 호출
-		System.out.println(p);//tostring
-		
+//		Person p=new Person("lee");//로컬 호출
+//		System.out.println(p);//tostring
+//		
 		
 		
 		//리플렉션으로 원격 호출
@@ -18,7 +18,7 @@ public class ClassTest {
 		Class classz=Class.forName("classz.Person");//클래스의 이름을 인자로 클래스 정보를 가져옴
 		System.out.println(classz.getName());
 		Person p2=(Person) classz.newInstance();
-		System.out.println(p2);
+		System.out.println(p2);//인스턴스의 내용이 아직 없음=null
 		
 		Class[] parameterType= {String.class};//??
 		Constructor cons= classz.getConstructor(parameterType);//생성자 중 스트링타입을 파라미터로 받는 걸 사용하고자 함
@@ -38,7 +38,7 @@ public class ClassTest {
 		
 		
 		
-		Method method=classz.getDeclaredMethod("test1", int.class);
+		Method method=classz.getDeclaredMethod("test1", int.class);//매개변수 타입이 중복되는 메서드가 있다면?
 		int returnValue=(int) method.invoke(method, 222);
 		System.out.println(returnValue);
 		
