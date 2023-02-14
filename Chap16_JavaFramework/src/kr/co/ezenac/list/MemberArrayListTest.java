@@ -21,9 +21,9 @@ public class MemberArrayListTest {
 		
 		a.addMember(memberl);
 		a.showMember();
-		a.removeMember(1);
-		a.removeMember(3);
-		a.showMember();
+//		a.removeMember(1);
+//		a.removeMember(3);
+//		a.showMember();
 		a.showMember();
 	}
 }

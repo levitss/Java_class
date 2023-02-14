@@ -21,7 +21,7 @@ public class MemberHashMap {
 		return false;
 	}
 	public void showAllMembers() {
-		Iterator<Integer>iterator= hashMap.keySet().iterator();//key값만 set계열로 리턴받음
+		Iterator<Integer>iterator= hashMap.keySet().iterator();//key값만 set계열로 리턴받음 integer라서
 		while (iterator.hasNext()) {//boolean
 			int key=iterator.next();
 			Member member=hashMap.get(key);//key에 맞는 value 반환

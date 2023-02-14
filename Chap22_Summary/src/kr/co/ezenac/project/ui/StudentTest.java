@@ -21,7 +21,7 @@ public class StudentTest {
 		list.add(s2);
 		list.add(s1);
 		
-		System.out.println(hash.);
+//		System.out.println(hash.);
 		
 		
 		s1.langresult();

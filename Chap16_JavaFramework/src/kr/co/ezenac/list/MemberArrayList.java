@@ -24,21 +24,34 @@ public class MemberArrayList {
 //				
 //			}
 //		}
-//		
 		Iterator<Member> ir=arrayList.iterator();
 		while(ir.hasNext()) {
-			Member mem=ir.next();
-			int tempid=mem.getId();
-			if(tempid==id) {
-				arrayList.remove(mem);
-				
+			Member member=ir.next();
+//			int temp=member.getId();
+			if(member.getId()==id) {
+				arrayList.remove(member);
 				return true;
 			}
+			
 		}
-		System.out.println(id+"가 존재하지 않음");
-		System.out.println();
 		return false;
 	}
+		
+//		
+//		Iterator<Member> ir=arrayList.iterator();
+//		while(ir.hasNext()) {
+//			Member mem=ir.next();
+//			int tempid=mem.getId();
+//			if(tempid==id) {
+//				arrayList.remove(mem);
+//				
+//				return true;
+//			}
+//		}
+//		System.out.println(id+"가 존재하지 않음");
+//		System.out.println();
+//		return false;
+//	}
 //	public void delMember(int id) {
 //		arrayList.remove(arrayList.indexOf(id));//멤버 클래스 형식이 아님
 //	}

@@ -20,11 +20,13 @@ public class HashmapTest {
 		System.out.println(map.values());
 		System.out.println(map.keySet());
 
-		Set<Map.Entry<String, Integer>>entrySet=map.entrySet();//tuple 생성 Map에 저장된 데이터 열거
+//		Set<Map.Entry<String, Integer>>entrySet=map.entrySet();//tuple 생성 Map에 저장된 데이터 열거
 		/*메소드 entrySet은 Map의 데이터를 담고있는 Set을 반환한다. 반환한 Set의 ㄱㅄ이 사용할 데이터의 타입은 Map.Entry
 		 * Map.entry는 인터페이스인데 getKey,getValue api를 가지고 있다
-		 * https://dgsw.goorm.io/learn/lecture/41/%EB%B0%94%EB%A1%9C%EC%8B%A4%EC%8A%B5-%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9-%EC%9E%90%EB%B0%94-java/lesson/39124/map
+		 * 
+		 * map을 set으로 변환 후 iterator로 출력
 		 */
+		Set<Map.Entry<String, Integer>>entrySet=map.entrySet();
 		Iterator<Map.Entry<String, Integer>> entryIterator = entrySet.iterator();
 		//Iterator는 자바의 컬렉션 프레임워크에서 컬렉션에 저장되어 있는 요소들을 읽어오는 방법
 		while (entryIterator.hasNext()) {
