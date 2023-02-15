@@ -1,6 +1,8 @@
-package kr.co.ezenac.project.ui;
+package kr.co.ezenac.uiTest;
 
 public interface Grade {
+	
+	
 	public default String essenGrading(int score) {
 		if(score>=95)
 			return "s";

@@ -1,6 +1,5 @@
-package kr.co.ezenac.project.ui;
+package kr.co.ezenac.uiTest;
 
-import kr.co.ezenac.project.school.School;
 
 /*요구사항(문제 정의)
  * 
@@ -68,22 +67,9 @@ import kr.co.ezenac.project.school.School;
 
 public class UiMain {
 	
-	//school 을 singtone으로 정의
-	School ezenschool = School.getInctance();
-	
 	
 	public static void main(String[] args) {
-		UiMain uimain=new UiMain();
-		uimain.createSubject();//시험과목 생성
-		uimain.createStudent();
 		
 	}
 
-	public void createStudent() {
-		
-	}
-
-	public void createSubject() {
-		
-	}
 }

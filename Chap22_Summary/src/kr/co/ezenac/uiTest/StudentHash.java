@@ -1,4 +1,4 @@
-package kr.co.ezenac.project.ui;
+package kr.co.ezenac.uiTest;
 
 import java.util.HashMap;
 

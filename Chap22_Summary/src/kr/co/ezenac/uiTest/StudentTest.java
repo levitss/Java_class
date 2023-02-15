@@ -1,12 +1,12 @@
-package kr.co.ezenac.project.ui;
+package kr.co.ezenac.uiTest;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class StudentTest {
 	public static void main(String[] args) {
-		Majors korean =new Majors("KoreanLanguageEducation");
-		Majors computer=new Majors("ComputerEngineering"); 
+		Majors korean =new Majors("국어교육학과");
+		Majors computer=new Majors("컴퓨터공학과"); 
 		ArrayList<Student>list=new ArrayList<>();
 		StudentHash hash=new StudentHash();
 		Student s1=new Student("Lee", 1, computer);
