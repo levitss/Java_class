@@ -6,7 +6,7 @@ public class Student {
 	private String studentName;
 	private int studentId;
 	private Subject majorSub;
-	private ArrayList<Score> score=new ArrayList<>(); 
+	private ArrayList<Score> scores=new ArrayList<>(); 
 	
 	public Student(String name,int id,Subject major) {
 		this.majorSub=major;
@@ -39,7 +39,12 @@ public class Student {
 	}
 
 	public void addSubScore(Score score){
-		this.score.add(score);
+		this.scores.add(score);
 	}
+
+	public ArrayList<Score> getScores() {
+		return scores;
+	}
+	
 
 }

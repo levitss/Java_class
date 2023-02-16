@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Subject {
 	//	dto
-	private int subjectId;//map으로 하면?
+	private int subjectId;//map으로 하면? //현재는 기본 틀
 	private String subjectName;
 	private int gradeType; //boolean으로 ? 기본은 a~f
 	ArrayList<Student> students=new ArrayList<>();
@@ -45,5 +45,6 @@ public class Subject {
 	public void register(Student st) {
 		this.students.add(st);
 	}
+	
 	
 }

@@ -1,5 +1,5 @@
 package kr.co.ezenac.project.school;
-
+//st나 sub의 멤버변수로 두면 안되는가 이중배열
 public class Score {
 	private int studentId;
 	private Subject subject;
