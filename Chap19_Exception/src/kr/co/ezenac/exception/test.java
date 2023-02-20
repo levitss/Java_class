@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 public class test {
 	public static void main(String[] args) {
-		ArrayList<ArrayList<String>> arr=new ArrayList<ArrayList<String>>();
+		int a=55;
+		System.out.println(a%10);
 		
 	}
 }

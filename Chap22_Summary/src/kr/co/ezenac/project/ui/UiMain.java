@@ -106,7 +106,7 @@ import kr.co.ezenac.project.utils.Constants;
 public class UiMain {
 	
 	//school 을 singtone으로 정의
-	School ezenschool = School.getInctance();
+	School ezenschool = School.getInstance();
 	GenerateGradeDisplay display=new GenerateGradeDisplay();
 	Subject math;
 	Subject korean;

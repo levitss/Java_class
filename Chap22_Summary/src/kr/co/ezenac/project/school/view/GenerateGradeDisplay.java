@@ -1,6 +1,7 @@
 package kr.co.ezenac.project.school.view;
 
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 import kr.co.ezenac.project.grade.BasicEvaluation;
@@ -15,7 +16,7 @@ import kr.co.ezenac.project.utils.Constants;
 
 public class GenerateGradeDisplay {
 	
-	School school=School.getInctance();
+	School school=School.getInstance();
 	public static final String TITLE="과목 학점 결과>>>\n";
 	public static final String LINE="------------------------------------------------------------------\n";
 	public static final String HEADER="이름\t학번\t  필수\t점수\t학점\n";
@@ -36,7 +37,7 @@ public class GenerateGradeDisplay {
 			Student st=student.get(i);
 			str.append(st.getStudentName()+"\t");
 			str.append(st.getStudentId()+"  ");
-			str.append(st.getMajorSub().getSubjectName()+"\t");
+			str.append(st.getMajorSub().getSubjectName()+"\t");//전공 불러오기
 			getScoreGrade(st, sub);//학생별 해당과목 학점		
 			str.append("\n");	
 		}
@@ -45,7 +46,7 @@ public class GenerateGradeDisplay {
 	}
 	private void getScoreGrade(Student st, Subject sub) {
 		ArrayList<Score> scoreList= st.getScores();
-		int majorId=st.getMajorSub().getSubjectId();
+		int majorId=st.getMajorSub().getSubjectId();//학생의 전공 과목 아이디 뽑아내기
 		//학점 평가 클래스들
 		GradeEvaluation[] gradeEval= {new BasicEvaluation(), new MajorEvaluation(),new ExtraEvaluation()};
 		//학생의 점수들
