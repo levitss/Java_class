@@ -1,0 +1,1 @@
+aBCDEFG스트링 출력CD

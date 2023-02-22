@@ -10,7 +10,10 @@ public class FileOutputStreamTest3 {
 		
 		
 		OutputStream fos=new FileOutputStream("output4.txt",true);
-		try(fos){
+		
+		
+		try(fos){//try() 안에 입출력 스트림을 생성하는 로직을 작성하는데 이때 해당 객체는 AutoCloseable 인터페이스를 구현한 객체여야 합니다.
+			
 			//byte[]배열에 a-z까지 넣고 배열을 한꺼번에 파일에 쓰기
 			byte[] b=new byte[26];
 			byte data=65;
