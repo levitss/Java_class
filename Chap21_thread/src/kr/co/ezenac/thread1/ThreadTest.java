@@ -20,7 +20,7 @@ public class ThreadTest {
 		Mythread th=new Mythread();
 		Mythread th2=new Mythread();
 		th.start();
-		th2.start();
+		th.start();
 		for(int i=0;i<200;i++) {
 			
 			System.out.print(i+" ");
