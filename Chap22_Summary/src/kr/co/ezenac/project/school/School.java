@@ -10,7 +10,7 @@ public class School {
 		instance=new School();
 		return instance;
 	}
-	
+	//
 	private ArrayList<Student> students=new ArrayList<>();
 	private ArrayList<Subject> subjects=new ArrayList<>();
 	public ArrayList<Student> getStudents() {
