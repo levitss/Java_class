@@ -12,7 +12,7 @@ public class Subject {
 	public Subject(int subId, String subName) {
 		this.subjectId=subId;
 		this.subjectName=subName;
-	}
+	}//
 
 	public int getSubjectId() {
 		return subjectId;
